@@ -129,7 +129,7 @@ const Manager = () => {
         pauseOnHover
         theme="light"
       />
-      <div className="p-2 md :myContainer md:p-0">
+      <div className="p-2 md :myContainer md:p-0 ">
         <h1 className=" text-4xl font-bold  text-center">
           <span className=" text-green-700">&lt;</span>
           <span>Key</span>
@@ -186,7 +186,7 @@ const Manager = () => {
           </div>
           <button
             onClick={savePassword}
-            className="flex justify-center gap-2 items-center bg-green-400 hover:bg-green-300 rounded-full px-6 border border-green-900 py-2 w-fit"
+            className="flex justify-center gap-2 items-center bg-green-400 hover:bg-green-300 rounded-full px-6 border border-green-900 py-2 w-fit transition"
           >
             <lord-icon
               src="https://cdn.lordicon.com/exymduqj.json"
@@ -197,12 +197,13 @@ const Manager = () => {
             Save Password
           </button>
         </div>
-
+        <div className="mt-6 overflow-x-auto">
         <div className="passwords">
-          <h2 className="text-2xl py-4 font-bold">Your Keys</h2>
-          {passwordArray.length === 0 && <div>No passwords to show</div>}
+          <h2 className="text-2xl py-4 px-4 font-bold text-center">Your Keys</h2>
+          {passwordArray.length === 0 && <p className="text-gray-500 px-4 text-center">No passwords to show</p>}
           {passwordArray.length != 0 && (
-            <table className="table-auto w-full overflow-hidden rounded-md">
+            <div className="overflow-x-auto">
+            <table className="table-auto w-full min-w-max border-collapse overflow-hidden rounded-md">
               <thead className="bg-green-800  text-white">
                 <tr>
                   <th className="py-2">Site</th>
@@ -216,7 +217,7 @@ const Manager = () => {
                   <tr key={index}>
                     <td className="text-center py-2 border-b-white">
                       <div className="flex justify-center items-center">
-                        <a href={item.site} target="blank">
+                        <a href={item.site} target="blank" className="text-blue-600 hover:underline">
                           {item.site}
                         </a>
                         <div
@@ -312,7 +313,9 @@ const Manager = () => {
                 ))}
               </tbody>
             </table>
+            </div>
           )}
+        </div>
         </div>
       </div>
     </>

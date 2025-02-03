@@ -11,7 +11,7 @@ const Footer = () => {
       <div className="flex justify-center items-center">
         Created with
         <img className="w-7 mx-2" src="/Icons/heart.png" alt="heart image" />
-        By Adnan Qureshi
+        By <a href="https://github.com/juniorcoder02"><span className="font-bold mx-1 underline"> Adnan Qureshi</span></a>
       </div>
     </div>
   );
