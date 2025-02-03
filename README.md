@@ -43,7 +43,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 Feel free to contribute by submitting issues or pull requests. Follow the contribution guidelines before submitting.
 
 ## 📧 Contact
-For any inquiries, reach out at **aadiqureshi.email@example.com** or connect on [LinkedIn](https://www.linkedin.com/in/adnan-qureshi-aa1517246).
+For any inquiries, reach out at **aadiqureshi89@gmail.com** or connect on [LinkedIn](https://www.linkedin.com/in/adnan-qureshi-aa1517246).
 
 ---
 
